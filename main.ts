@@ -1,12 +1,15 @@
-// A working best-game-01 entry (Node 22, standard library only): the game is this directory's
-// game/ folder, plain static files a desktop browser loads offline (game/index.html and its ES
-// modules, no library and no network request), and the program hands it in. It copies game/ and
+// Tinker & Spot: The Clockmaker's Workshop — a spot-the-difference game (Node 22, standard
+// library only). Two near-identical pictures of a clockmaker's workshop sit side by side, and the
+// player hunts the subtle changes between them. Three scenes in all, seven differences in each —
+// twenty-one to find across the whole game. Differences are found by clicking (or tapping) them
+// directly, or by steering the keyboard crosshair and confirming with Enter. The layout is
+// responsive, with a touch-friendly stacked view on narrow screens, and every sound effect — the
+// tick of a found difference, the soft thud of a miss, the chime of a finished scene — is
+// synthesized live with procedural WebAudio, so there are no audio assets to ship. The game
+// itself is the plain static files in this directory's game/ folder (game/index.html and its ES
+// modules, no library and no network request). This program hands it in: it copies game/ and
 // screenshots/ from beside this file to /output and writes /output/dossier.json, the summary the
-// judge reads, with the vendored make.fun library. A starting point, not a winner: Block Dodger, a
-// plain 2D canvas game where a paddle dodges falling blocks and catches coins, with a title screen,
-// score, lives and levels, game over and restart, flat colours and no sound. Build your own game
-// (any genre, any library you vendor under game/, or none), put your 3 or 4 PNG or JPEG screenshots
-// in screenshots/ (the first by name is the cover) and run it.
+// judge reads, with the vendored make.fun library.
 //
 // Serve it locally with `node serve.ts`, then open http://localhost:8080.
 // Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
